@@ -1,6 +1,7 @@
 package org.launchcode.techjobs.console;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -117,9 +118,9 @@ public class TechJobs {
             System.out.println("No results");
         } else {
 
-            for (int i = 0; i < results.size(); i++){
+            for (int i = 0; i < results.size(); i++) {
                 System.out.println("*****");
-                for (String key : results.get(i).keySet()){
+                for (String key : results.get(i).keySet()) {
                     System.out.println(key + ": " + results.get(i).get(key));
                 }
                 System.out.println("*****\n");
