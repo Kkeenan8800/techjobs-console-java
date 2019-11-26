@@ -97,9 +97,9 @@ public class JobData {
             for (String key : row.keySet()){
                 if (row.get(key).toLowerCase().contains(value)){
                     jobs.add(row);
+                    break;
                 }
             }
-
         }
 
         return jobs;
